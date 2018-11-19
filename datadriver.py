@@ -37,9 +37,9 @@ def runCases(line):
     writer.write(writer.row, writer.clo + 1, "没有该关键字")
 
 # 打开excel用例
-reader.open_excel("../lib/HTTP.xls")
+reader.open_excel("./lib/HTTP.xls")
 #写入的excel结果
-writer.copy_open("../lib/HTTP.xls","../lib/HTTP-result.xls")
+writer.copy_open("./lib/HTTP.xls","./lib/HTTP-result.xls")
 writer.clo = 7
 # 逐行读取excel到list
 for i in range(0,reader.r):
